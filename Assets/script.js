@@ -10,7 +10,7 @@ var today = dayjs();
 $('#currentDay').text(today.format('[Today is] dddd, MMM D, YYYY'));
 
 
-localStorage.getItem("tasks", hour9);
+localStorage.getItem("tasks", inputTask.value);
 
 
 $(function () {
