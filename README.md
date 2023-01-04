@@ -26,7 +26,7 @@ Jack Einhorn
 
 DEPLOYED LINK TO APPLICATION:
 
-
+https://skullkid4200.github.io/Week-5-Challenge-Project-Planner/
 
 ## License
 
