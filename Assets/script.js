@@ -1,6 +1,18 @@
 // Wrap all code that interacts with the DOM in a call to jQuery to ensure that
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
+var saveButton = document.querySelector("button");
+var inputTask = document.querySelector("textarea")
+
+
+
+var today = dayjs();
+$('#currentDay').text(today.format('[Today is] dddd, MMM D, YYYY'));
+
+
+localStorage.getItem("tasks", hour9);
+
+
 $(function () {
   // TODO: Add a listener for click events on the save button. This code should
   // use the id in the containing time-block as a key to save the user input in
@@ -9,6 +21,14 @@ $(function () {
   // time-block containing the button that was clicked? How might the id be
   // useful when saving the description in local storage?
   //
+  saveButton.addEventListener("click", function () {
+
+    // var inputTask = document.getElementsByClassName("col-8 col-md-10 description");
+    localStorage.setItem("tasks", inputTask.value);
+
+  });
+
+
   // TODO: Add code to apply the past, present, or future class to each time
   // block by comparing the id to the current hour. HINTS: How can the id
   // attribute of each time-block be used to conditionally add or remove the
@@ -21,3 +41,32 @@ $(function () {
   //
   // TODO: Add code to display the current date in the header of the page.
 });
+
+// function init() {
+//   localStorage.getItem("tasks");
+// }
+
+// function storeTasks() {
+//   // Stringify and set key in localStorage to todos array
+//   localStorage.setItem("tasks", JSON.stringify(tasks));
+// }
+
+// function changeColors() {
+
+//   if
+
+// }
+
+
+
+
+
+
+
+
+// saveButton.addEventListener("click", function () {
+
+//   localStorage.setItem("tasks", hour9);
+
+// });
+
